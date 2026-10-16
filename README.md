@@ -42,20 +42,11 @@ A practice project that takes the raw **Coffee Shop Sales** transaction log (149
 - Total revenue matches between raw (qty × price) and cleaned (`total_bill`): **$698,812.33**
 - `total_bill` equals `transaction_qty × unit_price` on every row
 
-## Quick facts from the cleaned data
-| | |
-|---|---|
-| Total revenue (Jan–Jun 2023) | $698,812 |
-| Top category by revenue | Coffee (~$270K), then Tea (~$196K) |
-| Stores | Hell's Kitchen ~$236.5K, Astoria ~$232.2K, Lower Manhattan ~$230.1K |
-| Busiest month | June (~$166.5K); lowest was February (~$76.1K) |
-| Peak hour by revenue | 10 am |
+
 
 ## Known limitations
 - The first column's header in `Sheet1` is blank (it holds `transaction_id`). Rename it to `transaction_id`.
-- The source data has a spelling variant, `Jamacian Coffee River` next to `Jamaican Coffee River`. It is kept as in the raw file. Merge them if you need a single product.
-- The query reads the raw file from a local path (`C:\Users\...\Coffee Shop Sales.xlsx`). To refresh on another computer, change the path in the `Source` step.
-- Rows are not sorted by `transaction_id`. Add a sort step if order matters.
+
 
 
 
