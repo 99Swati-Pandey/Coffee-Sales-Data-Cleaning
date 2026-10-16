@@ -57,10 +57,7 @@ A practice project that takes the raw **Coffee Shop Sales** transaction log (149
 - The query reads the raw file from a local path (`C:\Users\...\Coffee Shop Sales.xlsx`). To refresh on another computer, change the path in the `Source` step.
 - Rows are not sorted by `transaction_id`. Add a sort step if order matters.
 
-## How to use
-1. Open the cleaned workbook in Excel.
-2. To review the steps, go to **Data → Queries & Connections → Transactions → Edit**.
-3. Point the `Source` step to your copy of `Coffee_Shop_Sales.xlsx`, then **Refresh All**.
+
 
 ## Skills demonstrated
 Power Query, M language, data typing, text cleaning, feature engineering (size, month, day, hour, total bill), validation against the raw data, documentation
